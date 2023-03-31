@@ -1,0 +1,25 @@
+﻿@page  "/"
+ 
+@namespace SimpleBlazorServerApp.Pages
+ 
+
+@using DemoBlazorApp.Components
+ 
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Hello Blazor Server</title>
+    <base href="~/" />
+</head>
+<body>
+    <app>
+        <component type="typeof(Main)" render-mode="ServerPrerendered" />
+    </app>
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>

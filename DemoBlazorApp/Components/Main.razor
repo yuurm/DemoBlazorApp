@@ -1,0 +1,17 @@
+<h3>Main</h3>
+
+<link href="/css/styles.css" rel="stylesheet" type="text/css">
+ 
+<h1>Hello @name</h1>
+<h3>WII</h3>
+ 
+<img alt="wii" src="favicon.png" />
+
+@code {
+    string name = "Yuri";
+
+    string ShowTimeStamp()
+    {
+        return $"Current Timeout: {DateTime.Now.ToString("HH:mm:ss")}";
+    }
+}
